@@ -24,7 +24,6 @@ class OrdersController < ApplicationController
   def empty_cart!
     # empty hash means no products in cart :)
     update_cart({})
-    puts "EMPTY CART"
   end
 
   def perform_stripe_charge
@@ -56,5 +55,4 @@ class OrdersController < ApplicationController
     order.save!
     order
   end
-
 end
