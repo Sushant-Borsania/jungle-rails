@@ -1,8 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Product, type: :model do
-  describe 'Validations' do
-    
+  describe 'Validations' do 
     # validation tests/examples here
     it 'should have a valid product' do
       @category = Category.create(name:"Tech")
@@ -63,6 +62,5 @@ RSpec.describe Product, type: :model do
       expect(product).to_not (be_valid)
       # be_valid => meaning all of the ActiveModel::Validations passed and no errors exist.
     end
-
   end
 end
